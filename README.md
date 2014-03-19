@@ -131,3 +131,7 @@ SimpleMigration
 * Sqlite
 * Maria
 * .. ?
+
+## License
+
+MPL-2.0

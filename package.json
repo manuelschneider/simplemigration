@@ -1,7 +1,7 @@
 {
   "name": "simplemigration",
   "description": "yet another tool for managing databases",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/manuelschneider/simplemigration",
   "author": {
     "name": "Manuel Schneider",
@@ -27,11 +27,7 @@
   "scripts": {},
   "dependencies": {
     "source-map-support": "~0.2.5",
-    "execSync": "~1.0.1-pre",
     "wrench": "~1.5.7",
-    "mongo-sync": "^0.2.4",
-    "fibers": "^1.0.1",
-    "common-node": "^0.10.10",
     "mongodb": "^1.3.23"
   },
   "devDependencies": {
@@ -46,7 +42,9 @@
   },
   "keywords": [],
   "files": [
-    "LICENSE-MPL-2.0"
+    "LICENSE-MPL-2.0",
+    "SimpleMigration.js"
+    "storages/**/*.js"
   ],
   "main": "SimpleMigration"
 }
