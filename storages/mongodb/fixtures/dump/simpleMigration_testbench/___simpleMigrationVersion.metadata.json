@@ -1,0 +1,1 @@
+{ "options" : { "create" : "___simpleMigrationVersion" }, "indexes" : [ { "v" : 1, "key" : { "_id" : 1 }, "ns" : "simpleMigration_testbench.___simpleMigrationVersion", "name" : "_id_" } ] }

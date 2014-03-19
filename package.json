@@ -1,0 +1,52 @@
+{
+  "name": "simplemigration",
+  "description": "yet another tool for managing databases",
+  "version": "0.0.0",
+  "homepage": "https://github.com/manuelschneider/simplemigration",
+  "author": {
+    "name": "Manuel Schneider",
+    "email": "scriptlets@efreetsystems.de",
+    "url": "http://www.efreetsystems.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/manuelschneider/simplemigration.git"
+  },
+  "bugs": {
+    "url": "https://github.com/manuelschneider/simplemigration/issues"
+  },
+  "licenses": [
+    {
+      "type": "MPL-2.0",
+      "url": "https://github.com/manuelschneider/simplemigration/blob/master/LICENSE-MPL-2.0"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.10.24"
+  },
+  "scripts": {},
+  "dependencies": {
+    "source-map-support": "~0.2.5",
+    "execSync": "~1.0.1-pre",
+    "wrench": "~1.5.7",
+    "mongo-sync": "^0.2.4",
+    "fibers": "^1.0.1",
+    "common-node": "^0.10.10",
+    "mongodb": "^1.3.23"
+  },
+  "devDependencies": {
+    "grunt-banner": "~0.2.0",
+    "grunt-contrib-watch": "~0.4.0",
+    "grunt-contrib-coffee": "~0.8.0",
+    "grunt-coffeelint": "0.0.8",
+    "grunt": "~0.4.2",
+    "grunt-contrib-copy": "~0.5.0",
+    "should": "^3.1.3",
+    "grunt-mocha-test": "^0.9.4"
+  },
+  "keywords": [],
+  "files": [
+    "LICENSE-MPL-2.0"
+  ],
+  "main": "SimpleMigration"
+}

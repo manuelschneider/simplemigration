@@ -1,0 +1,8 @@
+{
+    "type": "mongodb",
+    "host": "localhost",
+    "port": 27017,
+    "schema": "simpleMigration_testbench",
+    "user": null,
+    "pw": null
+}

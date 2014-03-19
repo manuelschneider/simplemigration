@@ -1,0 +1,1 @@
+{ "options" : { "create" : "guests" }, "indexes" : [ { "v" : 1, "key" : { "_id" : 1 }, "ns" : "simpleMigration_testbench.guests", "name" : "_id_" }, { "v" : 1, "key" : { "id" : 1 }, "ns" : "simpleMigration_testbench.guests", "name" : "id_1", "w" : 1 } ] }

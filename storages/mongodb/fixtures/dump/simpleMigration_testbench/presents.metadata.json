@@ -1,0 +1,1 @@
+{ "options" : { "create" : "presents" }, "indexes" : [ { "v" : 1, "key" : { "_id" : 1 }, "ns" : "simpleMigration_testbench.presents", "name" : "_id_" }, { "v" : 1, "key" : { "id" : 1 }, "ns" : "simpleMigration_testbench.presents", "name" : "id_1", "w" : 1 } ] }
