@@ -202,7 +202,7 @@
 
 //# sourceMappingURL=.././SimpleMigration.js.map
 
-/*! simplemigration - v0.0.0 - 2014-03-19
+/*! simplemigration - v0.0.1 - 2014-03-19
 * https://github.com/manuelschneider/simplemigration
 * Copyright (c) 2014 Manuel Schneider; All rights reserved. */
 require('source-map-support').install();

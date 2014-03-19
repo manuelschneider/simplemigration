@@ -1,7 +1,7 @@
 {
   "name": "simplemigration",
   "description": "yet another tool for managing databases",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/manuelschneider/simplemigration",
   "author": {
     "name": "Manuel Schneider",
@@ -43,8 +43,12 @@
   "keywords": [],
   "files": [
     "LICENSE-MPL-2.0",
-    "SimpleMigration.js"
-    "storages/**/*.js"
+    "SimpleMigration.js",
+    "SimpleMigration.js.map",
+    "storages/StorageModule.js",
+    "storages/StorageModule.js.map",
+    "storages/*/*.js",
+    "storages/*/*.js.map"
   ],
   "main": "SimpleMigration"
 }
