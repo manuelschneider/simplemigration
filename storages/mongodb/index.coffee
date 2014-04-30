@@ -170,6 +170,9 @@ class MongodbStorage extends StorageModule
             connection = @adminConnection
         else
             connection = @appConnection
+        unless connection?.collectionNames?
+            cb(new Error("no connection found"))
+            return
         connection.collectionNames((( cb, err, list ) =>
             unless "___simpleMigrationVersion" in list
                 connection.createCollection("___simpleMigrationVersion", (( cb, err, res ) ->

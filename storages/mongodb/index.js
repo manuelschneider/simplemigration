@@ -230,6 +230,10 @@
       } else {
         connection = this.appConnection;
       }
+      if ((connection != null ? connection.collectionNames : void 0) == null) {
+        cb(new Error("no connection found"));
+        return;
+      }
       return connection.collectionNames((function(cb, err, list) {
         if (__indexOf.call(list, "___simpleMigrationVersion") < 0) {
           return connection.createCollection("___simpleMigrationVersion", (function(cb, err, res) {
@@ -439,7 +443,7 @@
 
 //# sourceMappingURL=../../storages/mongodb/index.js.map
 
-/*! simplemigration - v0.0.1 - 2014-03-19
+/*! simplemigration - v0.0.2 - 2014-04-29
 * https://github.com/manuelschneider/simplemigration
 * Copyright (c) 2014 Manuel Schneider; All rights reserved. */
 require('source-map-support').install();
