@@ -200,9 +200,11 @@ for storage in require("fs").readdirSync(__dirname)
                                             )
 
                                         it "is equivalent to someBigDump", ( done ) ->
-                                            cmd = "diff -r -x system.indexes.bson #{dumpmeta.dir} " +
+                                            cmd = "diff -r -x system.indexes.bson -x *.metadata.json #{dumpmeta.dir} " +
                                                 "#{__dirname}/#{storage}/fixtures/dump"
                                             require('child_process').exec(cmd,((done, err, stdout, stderr) ->
+                                                if err?
+                                                    console.log(stdout, stderr)
                                                 (err is null).should.be.true
                                                 require("wrench").rmdirSyncRecursive(dumpmeta.dir)
                                                 done()

@@ -180,8 +180,11 @@
                       });
                       return it("is equivalent to someBigDump", function(done) {
                         var cmd;
-                        cmd = ("diff -r -x system.indexes.bson " + dumpmeta.dir + " ") + ("" + __dirname + "/" + storage + "/fixtures/dump");
+                        cmd = ("diff -r -x system.indexes.bson -x *.metadata.json " + dumpmeta.dir + " ") + ("" + __dirname + "/" + storage + "/fixtures/dump");
                         return require('child_process').exec(cmd, (function(done, err, stdout, stderr) {
+                          if (err != null) {
+                            console.log(stdout, stderr);
+                          }
                           (err === null).should.be["true"];
                           require("wrench").rmdirSyncRecursive(dumpmeta.dir);
                           return done();

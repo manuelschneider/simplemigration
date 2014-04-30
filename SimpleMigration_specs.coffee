@@ -101,7 +101,7 @@ describe "SimpleMigration", ->
             it "does not alter the db (the previous state is restored)", ( done ) ->
                 inst.backup((( done, dumpdir) ->
                     dumpmeta.after = dumpdir
-                    cmd = "diff -r -x system.indexes.bson -x ___simpleMigrationVersion.bson #{dumpmeta.before} #{dumpmeta.after}"
+                    cmd = "diff -r -x system.indexes.bson -x ___simpleMigrationVersion.bson -x *.metadata.json #{dumpmeta.before} #{dumpmeta.after}"
                     require('child_process').exec(cmd,((done, err, stdout, stderr) ->
                         if err isnt null
                             console.log(
@@ -142,7 +142,7 @@ describe "SimpleMigration", ->
                 )
 
             it "is equivalent to someBigDump", ( done ) ->
-                cmd = "diff -r -x system.indexes.bson #{dumpmeta.dir} " +
+                cmd = "diff -r -x system.indexes.bson -x *.metadata.json #{dumpmeta.dir} " +
                     "#{__dirname}/storages/mongodb/fixtures/dump"
                 require('child_process').exec(cmd,((done, err, stdout, stderr) ->
                     (err is null).should.be.true
