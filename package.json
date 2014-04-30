@@ -1,7 +1,7 @@
 {
   "name": "simplemigration",
   "description": "yet another tool for managing databases",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/manuelschneider/simplemigration",
   "author": {
     "name": "Manuel Schneider",
